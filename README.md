@@ -1,6 +1,11 @@
 # Eluvio_DS_challenge
 Eluvio_DS_challenge
 
+1. Analyze the dataset and find popular titles
+2. Create word2vec embeddings for titles
+3. Predict the popularity of a title based on up_vote feature
+
+
 There are 8 columns in this dataset, ["time_created"、"date_created"、"up_votes"、"down_votes"、"title"、"over_18"、"author" and "category"]. 
 For this open challenge, the feature "up_votes" can be a predictind label that we focus on whether the news is attracting or not.
 This work will be useful if we know how attractive news is, we can create more business opportunities for those products.
