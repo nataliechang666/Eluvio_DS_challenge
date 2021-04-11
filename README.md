@@ -1,11 +1,11 @@
 # Eluvio_DS_challenge
-Eluvio_DS_challenge
 
-1. Data processing and data analysis
-2. Create word2vec embeddings for titles
-3. Predict the attracting news based on up_vote feature
-4. Predict the sentiment based on title
+- Data processing and data analysis
+- Create word2vec embeddings for titles
+- Predict the attracting news based on up_vote feature
+- Predict the sentiment based on title
 
+# First Task
 There are 8 columns in this dataset, ["time_created"、"date_created"、"up_votes"、"down_votes"、"title"、"over_18"、"author" and "category"]. 
 For this open challenge, the feature "up_votes" can be a predictind label that we focus on whether the news is attracting or not.
 This work will be useful if we know how attractive news is, we can create more business opportunities for those products.
@@ -23,8 +23,7 @@ Another is just in two classes - [attractive] and [not attractive], here I set t
 Next, I split data for 80% training data and 20% testing data. 
 
 In the first experiment, I used torch.nn to predict these 5 levels and finally got 0.43 F1-score with 1.0 precision.
-In the second experiment,the result shows 0.81 accuracy on LR, GBDT and MNN models with 0.72 weight average and 0.81 precision.
-On the other hand, lightGBM model has 0.81 accuracy with 0.89 weight average and 1.0 precision, which is highest above all.
+In the second experiment,the result shows 0.9 accuracy on LR, GBDT and MNN models with 0.86 weight average and 0.9 precision.
+On the other hand, lightGBM model has 0.9 accuracy with 0.95 weight average and 1.0 precision, which is highest above all.
 
 For the conclusion, we can see that all the simple machine learning model shows that the ['title'], ['over_18'], ['authors'], have a very strong relationship with "up_votes".
-In this data, people are almost less than 18 age, thus I think this result is focusing on the general news.
