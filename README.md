@@ -27,3 +27,5 @@ In the second experiment,the result shows 0.9 accuracy on LR, GBDT and MNN model
 On the other hand, lightGBM model has 0.9 accuracy with 0.95 weight average and 1.0 precision, which is highest above all.
 
 For the conclusion, we can see that all the simple machine learning model shows that the ['title'], ['over_18'], ['authors'], have a very strong relationship with "up_votes".
+
+# Second Task
