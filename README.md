@@ -1,10 +1,10 @@
 # Eluvio_DS_challenge
 Eluvio_DS_challenge
 
-1. Analyze the dataset and find popular titles
+1. Data processing and data analysis
 2. Create word2vec embeddings for titles
-3. Predict the popularity of a title based on up_vote feature
-
+3. Predict the attracting news based on up_vote feature
+4. Predict the sentiment based on title
 
 There are 8 columns in this dataset, ["time_created"、"date_created"、"up_votes"、"down_votes"、"title"、"over_18"、"author" and "category"]. 
 For this open challenge, the feature "up_votes" can be a predictind label that we focus on whether the news is attracting or not.
@@ -19,8 +19,8 @@ Finally, I use ['title'], ['over_18'], ['authors'] to simplify the problem.
 
 For the text processing, I use nltk package on "title" and then use Word2Vec to generate 50 vectors for each title.
 In the experiment, I design two model tasks. One is let title divide into 5 levels - [extremely attractive],[attractive],[neutral],[not attractive],[extremely not attractive].
-Another is just in two classes - [attractive] and [not attractive], here I set the threshold to be 0.8 quantile.
-Next, I split data for 80% training data and 20% validation data. 
+Another is just in two classes - [attractive] and [not attractive], here I set the threshold to be 100.
+Next, I split data for 80% training data and 20% testing data. 
 
 In the first experiment, I used torch.nn to predict these 5 levels and finally got 0.43 F1-score with 1.0 precision.
 In the second experiment,the result shows 0.81 accuracy on LR, GBDT and MNN models with 0.72 weight average and 0.81 precision.
