@@ -33,7 +33,6 @@ Same way as first task for word tokenize and use nltk.sentiment.vader to generat
 Next, using tokenized['title'] to predict whether ['sentiment'] is positive(y=1) or negative(y=0).
 
 <img src="sentiment result.png" alt="Cover" width="50%"/>
-![image](https://github.com/nataliechang666/Eluvio_DS_challenge/blob/main/sentiment%20result.png)
 
 For the conclusion, since currently we don't have the true label on this dataset, we just use self labelled dataset for sentiment from nltk.
 Thus, the accuracy is not to high (around 0.5~0.6).
