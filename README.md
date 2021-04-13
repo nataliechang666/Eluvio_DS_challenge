@@ -4,6 +4,7 @@
 - Create word2vec embeddings for titles
 - Predict the attracting news based on up_vote feature
 - Predict the sentiment based on title
+- Recommand reader another news
 
 # First Task
 There are 8 columns in this dataset, ['time_created'、'date_created'、'up_votes'、'down_votes'、'title'、'over_18'、'author' and 'category']. 
@@ -36,5 +37,8 @@ Next, using tokenized['title'] to predict whether ['sentiment'] is positive(y=1)
 
 For the conclusion, since currently we don't have the true label on this dataset, we just use self labelled dataset for sentiment from nltk.
 Thus, the accuracy is not to high (around 0.5~0.6).
+
+# Third Task
+First, find the time earlier than current time for news i. Next, define whether this news is over 18. If false, choose all news which are also under 18. If True, choose all news. Then, find whether there are same author as news i, if yes, choose top 1 up_votes news; if no, choose top 1 up_votes news from diffent authors.
 
 
