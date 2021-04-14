@@ -36,7 +36,10 @@ Next, using tokenized['title'] to predict whether ['sentiment'] is positive(y=1)
 <img src="sentiment_result.png" alt="Cover" width="40%"/>
 
 For the conclusion, since currently we don't have the true label on this dataset, we just use self labelled dataset for sentiment from nltk.
-Thus, the accuracy is not to high (around 0.5~0.6).
+The accuracy is not to high (around 0.5~0.6). Thus, we try the pre-trained from Bert model. 
+Although the dataset is larget and my personal computer cannot handle it, the Bert pre-trained model get 0.91 high accuracy after training 2000 data.
+Hence, we think the sentiment test can have better result in this dataset if we have advance equipment.
+
 
 # Third Task
 First, find the time earlier than current time for news i. Next, define whether this news is over 18. If false, choose all news which are also under 18. If True, choose all news. Then, find whether there are same author as news i, if yes, choose top 1 up_votes news; if no, choose top 1 up_votes news from diffent authors.
