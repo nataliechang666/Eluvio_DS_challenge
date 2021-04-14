@@ -27,7 +27,7 @@ In the first experiment, I used torch.nn to predict these 5 levels and finally g
 In the second experiment,the result shows 0.9 accuracy on LR, GBDT and MNN models with 0.86 weight average and 0.9 precision.
 On the other hand, lightGBM model has 0.9 accuracy with 0.95 weight average and 1.0 precision, which is highest above all.
 
-<img src="task 1.png" alt="Cover" width="40%"/>
+<img src="task 1.png" alt="Cover" width="50%"/>
 
 For the conclusion, we can see that all the simple machine learning model shows that the ['title'], ['over_18'], ['authors'], have a very strong relationship with ['up_votes'].
 
@@ -35,14 +35,14 @@ For the conclusion, we can see that all the simple machine learning model shows 
 Same way as first task for word tokenize and use nltk.sentiment.vader to generate new label as ['sentiment'].
 Next, using tokenized['title'] to predict whether ['sentiment'] is positive(y=1) or negative(y=0).
 
-<img src="sentiment_result.png" alt="Cover" width="40%"/>
+<img src="sentiment_result.png" alt="Cover" width="50%"/>
 
 For the conclusion, since currently we don't have the true label on this dataset, we just use self labelled dataset for sentiment from nltk.
 The accuracy is not to high (around 0.5~0.6). Thus, we try the pre-trained from Bert model. 
 Although the dataset is larget and my personal computer cannot handle it, the Bert pre-trained model get 0.91 high accuracy after training 2000 data.
 Hence, we think the sentiment test can have better result in this dataset if we have advance equipment.
 
-<img src="pre-trained Bert.png" alt="Cover" width="40%"/>
+<img src="pre-trained Bert.png" alt="Cover" width="50%"/>
 
 # Third Task
 First, find the time earlier than current time for news i. Next, define whether this news is over 18. If false, choose all news which are also under 18. If True, choose all news. Then, find whether there are same author as news i, if yes, choose top 1 up_votes news; if no, choose top 1 up_votes news from diffent authors.
