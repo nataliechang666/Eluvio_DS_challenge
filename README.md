@@ -40,6 +40,7 @@ The accuracy is not to high (around 0.5~0.6). Thus, we try the pre-trained from 
 Although the dataset is larget and my personal computer cannot handle it, the Bert pre-trained model get 0.91 high accuracy after training 2000 data.
 Hence, we think the sentiment test can have better result in this dataset if we have advance equipment.
 
+<img src="" alt="Cover" width="40%"/>
 
 # Third Task
 First, find the time earlier than current time for news i. Next, define whether this news is over 18. If false, choose all news which are also under 18. If True, choose all news. Then, find whether there are same author as news i, if yes, choose top 1 up_votes news; if no, choose top 1 up_votes news from diffent authors.
