@@ -27,6 +27,8 @@ In the first experiment, I used torch.nn to predict these 5 levels and finally g
 In the second experiment,the result shows 0.9 accuracy on LR, GBDT and MNN models with 0.86 weight average and 0.9 precision.
 On the other hand, lightGBM model has 0.9 accuracy with 0.95 weight average and 1.0 precision, which is highest above all.
 
+<img src="task 1.png" alt="Cover" width="40%"/>
+
 For the conclusion, we can see that all the simple machine learning model shows that the ['title'], ['over_18'], ['authors'], have a very strong relationship with ['up_votes'].
 
 # Second Task
